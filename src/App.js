@@ -7,22 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/recruit">
-            <Recruit />
-          </Route>
-          <Route path="/contact">
-            <Home />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <Home />
     </>
   );
 }
