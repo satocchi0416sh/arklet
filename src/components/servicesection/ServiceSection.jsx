@@ -89,14 +89,6 @@ const ServiceSection = ({ scroll }) => {
             setPos3(100);
             setOpa3(0)
         }
-
-        console.log("pos1:" + pos1)
-        console.log("pos2:" + pos2)
-        console.log("pos3:" + pos3)
-        console.log("opa1:" + opa1)
-        console.log("opa2:" + opa2)
-        console.log("opa3:" + opa3)
-
     }, [scroll]);
 
 

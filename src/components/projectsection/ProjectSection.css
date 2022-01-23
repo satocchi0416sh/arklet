@@ -41,7 +41,7 @@
   width: 380px;
   height: 86px;
   font-size: 36px;
-  background: linear-gradient(45deg, transparent 5%, #ff013cad 5%);
+  background: linear-gradient(45deg, transparent 5%, #000000ad 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -71,7 +71,7 @@
     transparent 3%,
     #00e6f6a4 3%,
     #00e6f6a4 5%,
-    #ff013cad 5%
+    #000000ad 5%
   );
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6a4;
   clip-path: var(--slice-0);

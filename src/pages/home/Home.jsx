@@ -27,7 +27,6 @@ const Home = () => {
                     const response = await import(`../../anim/bg_${i}.png`)
                     imgArr.push(response.default);
                 }
-                console.log(imgArr);
                 setImages(imgArr);
             } catch (err) {
                 setError(err)
@@ -37,6 +36,10 @@ const Home = () => {
         }
         fetchImage()
     }, [])
+
+    useEffect(() => {
+        getImages()
+    }, [images]);
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -60,19 +63,33 @@ const Home = () => {
         return Math.floor(i / 2) % length;
     }
 
+    // 画像プリロード用関数
+    const getImages = () => {
 
+        for (let i = 0; i < images.length; i++) {
+            var img = document.createElement('img');
+            img.src = images[i];
+            console.log(img);
+
+            if (i === images.length - 1)
+                loadedComplete();
+        }
+    }
+
+    const loadedComplete = () => {
+        setLoaded(true)
+    }
 
     return (
         <>
             <div className="content">
                 <div id="anim_img_box">
-                    <img className={loaded && "loaded-img"} onLoad={() => setLoaded(true)} alt='bg' id="anim_img" src={images[posImage(scrollPosition)]} style={{ width: "100%" }} />
+                    <img className={loaded && "loaded-img"} alt='bg' id="anim_img" src={images[posImage(scrollPosition)]} style={{ width: "100%" }} />
                 </div>
                 <HeroSection loaded={loaded} />
                 <AboutSection scroll={scrollPosition} />
                 <ProjectSection scroll={scrollPosition} />
                 <ServiceSection scroll={scrollPosition} />
-
             </div>
         </>
     )
