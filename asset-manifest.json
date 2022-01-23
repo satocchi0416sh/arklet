@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arklet/static/css/main.b1abda66.css",
-    "main.js": "/arklet/static/js/main.4aefb89d.js",
+    "main.js": "/arklet/static/js/main.c29bbf8a.js",
     "static/js/9898.417ce7f8.chunk.js": "/arklet/static/js/9898.417ce7f8.chunk.js",
     "static/js/1711.6f40248f.chunk.js": "/arklet/static/js/1711.6f40248f.chunk.js",
     "static/js/8261.bac15bb4.chunk.js": "/arklet/static/js/8261.bac15bb4.chunk.js",
@@ -614,10 +614,10 @@
     "static/media/slick.woff": "/arklet/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/arklet/index.html",
     "main.b1abda66.css.map": "/arklet/static/css/main.b1abda66.css.map",
-    "main.4aefb89d.js.map": "/arklet/static/js/main.4aefb89d.js.map"
+    "main.c29bbf8a.js.map": "/arklet/static/js/main.c29bbf8a.js.map"
   },
   "entrypoints": [
     "static/css/main.b1abda66.css",
-    "static/js/main.4aefb89d.js"
+    "static/js/main.c29bbf8a.js"
   ]
 }
