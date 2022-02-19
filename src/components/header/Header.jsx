@@ -1,20 +1,18 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import "./Header.css"
 
 const Header = () => {
 
-    const history = useHistory();
-
     return (
         <>
             <header>
-                <h1>ARKLET</h1>
+                <Link to={"/"}><h1>ARKLET</h1></Link>
                 <nav className="gnav">
                     <ul className="menu">
-                        <li><a href="about" onClick={e => { e.preventDefault(); history.push("/about"); }}>会社概要</a></li>
-                        <li><a href="recruit" onClick={e => { e.preventDefault(); history.push("/recruit"); }}>採用情報</a></li>
-                        <li><a href="contact" onClick={e => { e.preventDefault(); history.push("/contact"); }}>お問い合わせ</a></li>
+                        <li><Link to={"/company"}>会社概要</Link></li>
+                        <li><Link to={"/recruit"}>採用情報</Link></li>
+                        <li><Link to={"/about"}>お問い合わせ</Link></li>
                     </ul>
                 </nav>
             </header>

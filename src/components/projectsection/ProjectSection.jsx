@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import "./ProjectSection.css"
-import img1 from "../../images/shacho-connection.webp"
+import img1 from "../../images/virtual-office-with-metaverse-01.jpeg"
 import img2 from "../../images/website-dimensions-content.jpeg"
 
 const ProjectSection = ({ scroll }) => {
@@ -87,9 +87,9 @@ const ProjectSection = ({ scroll }) => {
                     <br />
                     {pro === 0 ? <div className="project">
                         <img src={img1} alt="" style={{ backgroundColor: "black", width: "70vw", opacity: imgOpacity }} />
-                        <div className="project-txt">
-                            <h3>社長コネクション</h3>
-                            <h5>完全招待制の社長と学生のマッチングサービス</h5>
+                        <div className="project-txt" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+                            <h3>VR制作事業</h3>
+                            <h5>この文章はダミーです。文字の大きさ、量、字間、行間等を確認す</h5>
                             <button href="https://shacho-connection.com/">詳しく見る</button>
                         </div>
                     </div> : <div className="project">

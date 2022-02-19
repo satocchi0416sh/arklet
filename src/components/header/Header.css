@@ -34,3 +34,10 @@ header .gnav .menu li a {
   color: white;
   text-decoration: none;
 }
+header p {
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+}

@@ -1,0 +1,60 @@
+.company {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  font-size: 200%;
+  perspective: 1px;
+}
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 400px 0;
+}
+.parallax_layerbase {
+  transform: translateZ(0) scale(0.8);
+}
+
+.company-contents {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.parallax_layerback {
+  transform: translateZ(-1px) scale(2);
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../images/kenta-pattern.jpg");
+}
+
+.company-text {
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.company-text h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.company-table {
+  padding: 20px 100px;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.company-table th {
+  border-bottom: solid 2px #fb5144;
+  padding: 10px 0;
+}
+
+.company-table td {
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
